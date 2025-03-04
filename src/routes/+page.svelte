@@ -132,14 +132,14 @@
             
             await AdMob.prepareRewardVideoAd({
                 adId: testRewardedId,
-                isTesting: true,
-                ssv: {
-                    userId: "test-user-id",
-                    customData: JSON.stringify({
-                        level: 5,
-                        score: 100
-                    })
-                }
+                isTesting: true
+                // ssv: {
+                //     userId: "test-user-id",
+                //     customData: JSON.stringify({
+                //         level: 5,
+                //         score: 100
+                //     })
+                // }
             });
             console.log('Rewarded ad pre-loaded');
             rewardedAdLoaded = true;
